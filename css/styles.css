@@ -97,6 +97,11 @@ body {
     color: var(--main-color-hover);
 }
 
+#social-container a:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
 #email-container {
     display: flex;
     justify-content: center;

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página pessoal de Elton PC - Engenheiro Químico e Analista de Sistemas com experiência em TI, redes, e automação." />
     <title>EPCRS's Page</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
@@ -21,12 +22,12 @@
             
 
             <ul id="social-container">
-                <li><a href="https://github.com/epcrs" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                <li><a href="https://linkedin.com/in/epcrs" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://github.com/epcrs" target="_blank" aria-label="GitHub de Elton"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="https://linkedin.com/in/epcrs" target="_blank" aria-label="LinkedIn de Elton"><ion-icon name="logo-linkedin"></ion-icon></a></li>
             </ul>
 
             <div id="email-container">
-                <p id="welcome-text">Contato</p>
+                <p class="section-title">Contato</p>
                 <ion-icon name="mail-outline"></ion-icon>
                 <a href="mailto:seuemail@email.com">eltonpc@yahoo.com</a>
             </div>
@@ -38,16 +39,18 @@
             <p id="title">Engenheiro Químico | Analista de Sistemas | Desenvolvedor</p>
 
             <p class="description">
-                Profissional com mais de 15 anos de experiência no setor público, com atuação nas áreas de <span class="highlight">manutenção de redes, administração de sistemas, suporte técnico de N2/N3, análises de dados, práticas laborais na área química, coordenação de projetos, controle orçamentário</span> e liderança de equipes. 
+                Profissional com mais de 15 anos de experiência no setor público, com atuação nas áreas de <span class="highlight">manutenção de redes, administração de sistemas, suporte técnico de N2/N3, análises de dados, práticas laboratoriais em química, coordenação de projetos, controle orçamentário</span> e liderança de equipes multidisciplinares. 
             </p>
-            <p>Como engenheiro químico, posso aplicar minhas habilidades analíticas e de resolução de problemas em ambientes técnicos e industriais.
+            <p class="description">Como <span class="highlight">Engenheiro Químico</span>, aplico habilidades analíticas, pensamento crítico e conhecimento técnico para resolver problemas complexos em ambientes industriais, laboratoriais e de infraestrutura, sempre com foco na eficiência, segurança e inovação.
+            </p>
+            <p class="description">Além disso, venho aprofundando meus conhecimentos na área de <span class="highlight">tecnologia da informação e desenvolvimento</span>,com foco em <span class="highlight">programação em Python, versionamento com Git/GitHub, bancos de dados MySQL, Power BI</span> e <span class="highlight">automação com Docker</span>. Tenho experiência prática em <span class="highlight">administração de redes, suporte avançado, infraestrutura de TI</span>, além de interesse crescente por <span class="highlight">automação residencial e soluções baseadas em IA</span>. Busco constantemente integrar soluções tecnológicas aos desafios do dia a dia, unindo TI, engenharia e inovação.
             </p>
             <p class="description">
-                Atualmente, busco oportunidades que combinem minha experiência em <span class="highlight">tecnologia</span> com minha formação em <span class="highlight">engenharia</span>, contribuindo em projetos multidisciplinares, inovação, automação ou suporte técnico avançado.
+                Atualmente, estou em busca de oportunidades que permitam unir minha bagagem técnica com minha formação híbrida em <span class="highlight">engenharia e anãlise de sistemas</span>, contribuindo para <span class="highlight">projetos multidisciplinares, desenvolvimento de soluções inovadoras, automação de processos </span>ou <span class="highlight">suporte técnico avançado</span>.
             </p>
 
             <a href="#skills" id="btn-projects">
-               <button id="btn-skills">
+               <button id="btn-skills" aria-expanded="false">
                    <ion-icon name="flash-outline"></ion-icon> <span>Ver Skills</span>
                 </button>
             </a>
@@ -92,6 +95,8 @@
             btn.innerHTML = isVisible
                 ? '<ion-icon name="flash-off-outline"></ion-icon> <span>Ocultar Skills</span>'
                 : '<ion-icon name="flash-outline"></ion-icon> <span>Ver Skills</span>';
+
+            btn.setAttribute("aria-expanded", isVisible);
         });
     </script>
 </body>
