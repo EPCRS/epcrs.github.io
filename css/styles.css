@@ -169,6 +169,29 @@ body {
     color: var(--main-color);
 }
 
+.skills-toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px 0;
+}
+
+.skills-toggle-btn:hover {
+    background-color: #45a049;
+}
+
+.skills-toggle-btn ion-icon {
+    font-size: 20px;
+}
+
 /* Skills */
 #skills-section-title {
     border-top: 1px solid var(--border-color);
@@ -214,9 +237,14 @@ body {
     margin-right: 10px;
 }
 
-.hidden {
+#skills-container.hidden {
     display: none;
 }
+
+html {
+    overflow-y: scroll;
+}
+
 
 /* Mobile */
 @media (max-width: 768px) {

@@ -29,7 +29,7 @@
             <div id="email-container">
                 <p class="section-title">Contato</p>
                 <ion-icon name="mail-outline"></ion-icon>
-                <a href="mailto:seuemail@email.com">eltonpc@yahoo.com</a>
+                <p><a href="mailto:eltonpc@yahoo.com">eltonpc@yahoo.com</a></p>
             </div>
         </div>
 
@@ -49,12 +49,11 @@
                 Atualmente, estou em busca de oportunidades que permitam unir minha bagagem técnica com minha formação híbrida em <span class="highlight">engenharia e anãlise de sistemas</span>, contribuindo para <span class="highlight">projetos multidisciplinares, desenvolvimento de soluções inovadoras, automação de processos </span>ou <span class="highlight">suporte técnico avançado</span>.
             </p>
 
-            <a href="#skills" id="btn-projects">
-               <button id="btn-skills" aria-expanded="false">
-                   <ion-icon name="flash-outline"></ion-icon> <span>Ver Skills</span>
-                </button>
-            </a>
-
+            <button id="btn-skills" class="skills-toggle-btn">
+                <ion-icon name="flash-outline"></ion-icon>
+                <span>Ver Skills</span>
+            </button>
+            
             <h2 id="skills-section-title">Skills</h2>
             <div id="skills-container" class="hidden">
                 <!-- TI -->
@@ -84,20 +83,22 @@
             </div>
         </div>
     </div>
-    <script>
-        document.getElementById("btn-skills").addEventListener("click", function () {
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("btn-skills").addEventListener("click", function (){
             const skillsContainer = document.getElementById("skills-container");
             skillsContainer.classList.toggle("hidden");
-
+    
             const btn = document.getElementById("btn-skills");
             const isVisible = !skillsContainer.classList.contains("hidden");
 
             btn.innerHTML = isVisible
                 ? '<ion-icon name="flash-off-outline"></ion-icon> <span>Ocultar Skills</span>'
                 : '<ion-icon name="flash-outline"></ion-icon> <span>Ver Skills</span>';
-
-            btn.setAttribute("aria-expanded", isVisible);
-        });
-    </script>
+        })
+    });
+</script>
+    
 </body>
 </html>
