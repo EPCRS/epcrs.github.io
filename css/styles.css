@@ -209,6 +209,10 @@ body {
     margin-right: 10px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     #container {
