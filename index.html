@@ -45,12 +45,13 @@
             </p>
 
             <a href="#skills" id="btn-projects">
-                <ion-icon name="code-slash-outline"></ion-icon>
-                <span>Ver Skills</span>
+               <button id="btn-skills">
+                   <ion-icon name="flash-outline"></ion-icon> <span>Ver Skills</span>
+                </button>
             </a>
 
             <h2 id="skills-section-title">Skills</h2>
-            <div id="skills-container">
+            <div id="skills-container" class="hidden">
                 <!-- TI -->
                 <div class="skills-box">
                     <h3 class="skills-title">Tecnologia</h3>
@@ -78,5 +79,18 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById("btn-skills").addEventListener("click", function () {
+            const skillsContainer = document.getElementById("skills-container");
+            skillsContainer.classList.toggle("hidden");
+
+            const btn = document.getElementById("btn-skills");
+            const isVisible = !skillsContainer.classList.contains("hidden");
+
+            btn.innerHTML = isVisible
+                ? '<ion-icon name="flash-off-outline"></ion-icon> <span>Ocultar Skills</span>'
+                : '<ion-icon name="flash-outline"></ion-icon> <span>Ver Skills</span>';
+        });
+    </script>
 </body>
 </html>
