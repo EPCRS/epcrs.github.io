@@ -30,6 +30,13 @@ body {
     color: var(--main-color);
 }
 
+#clock {
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
 /* Containers */
 #container {
     display: flex;
