@@ -44,15 +44,6 @@ body {
     margin-top: 10px;
 }
 
-/* Google Translate */
-.goog-te-banner-frame {
-    display: none !important;
-}
-body {
-    top: 0px !important;
-}
-
-
 /* Containers */
 #container {
     display: flex;
