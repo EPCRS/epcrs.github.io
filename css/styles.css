@@ -31,9 +31,16 @@ body {
 }
 
 #clock {
-    color: #f0f0f0;
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
     font-size: 1.5rem;
     text-align: center;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    display: inline-block;
     margin-top: 10px;
 }
 
