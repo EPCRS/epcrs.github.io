@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elton - Engenheiro & Profissional de TI</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <div id="container">
-        <!-- BIO SECTION -->
+        <!-- BIO CONTAINER -->
         <div id="bio-container">
-            <img id="bio-img" src="elton-profile.jpg" alt="Foto de perfil de Elton">
+            <img id="bio-img" src="img/elton.jpg" alt="Foto de Perfil" />
             <h2>Elton</h2>
-            <p id="welcome-text">Bem-vindo ao meu portfólio!</p>
-            <p>Engenheiro Químico e Analista de Sistemas com sólida experiência em Administração Pública e Infraestrutura de TI.</p>
+            <p id="welcome-text">Olá, seja bem-vindo!</p>
+            <p>Profissional com formação em <span class="highlight">Engenharia Química</span> e <span class="highlight">Análise de Sistemas</span>. Atuando em áreas como <span class="highlight">infraestrutura de TI, suporte técnico e projetos de engenharia</span>.</p>
 
             <ul id="social-container">
                 <li><a href="https://github.com/seuusuario" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                <li><a href="https://linkedin.com/in/seuperfil" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://instagram.com/seuperfil" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://linkedin.com/in/seuusuario" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
             </ul>
 
             <div id="email-container">
@@ -29,46 +29,48 @@
             </div>
         </div>
 
-        <!-- ABOUT SECTION -->
+        <!-- ABOUT CONTAINER -->
         <div id="about-container">
             <h1 id="name">Elton</h1>
-            <p id="title">Engenheiro Químico | Analista de Sistemas | Especialista em Infraestrutura de TI</p>
+            <p id="title">Engenheiro Químico | Analista de Sistemas | Especialista em Infraestrutura e Suporte</p>
 
             <p class="description">
-                Profissional com mais de 15 anos de experiência na Administração Pública, atuando nas áreas de Engenharia, TI e Gestão. Liderança nata, foco em resolução de problemas e habilidades em ambientes multidisciplinares.
+                Profissional com mais de 15 anos de experiência no setor público, com atuação nas áreas de <span class="highlight">manutenção de redes, administração de sistemas, suporte técnico de N2/N3</span> e liderança de equipes. Como engenheiro químico, aplico habilidades analíticas e de resolução de problemas em ambientes técnicos e industriais.
             </p>
             <p class="description">
-                Atualmente aprofundando conhecimentos em <span class="highlight">AWS, Docker, MySQL, Python e Java</span>. Ampla experiência em suporte técnico (N1 a N3), redes, manutenção de computadores e administração de sistemas.
-            </p>
-            <p class="description">
-                Formação sólida em Engenharia Química com experiência em controle orçamentário, qualidade, boas práticas laboratoriais e automação. Atuante também em projetos sociais e esportivos, com forte engajamento em liderança comunitária.
+                Atualmente, busco oportunidades que combinem minha experiência em <span class="highlight">tecnologia</span> com minha formação em <span class="highlight">engenharia</span>, contribuindo em projetos multidisciplinares, inovação, automação ou suporte técnico avançado.
             </p>
 
-            <a id="btn-projects" href="#skills-section-title">
-                <ion-icon name="code-outline"></ion-icon>
-                <span>Ver Competências</span>
+            <a href="#skills" id="btn-projects">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <span>Ver Skills</span>
             </a>
 
-            <h2 id="skills-section-title">Competências</h2>
-
+            <h2 id="skills-section-title">Skills</h2>
             <div id="skills-container">
+                <!-- TI -->
                 <div class="skills-box">
-                    <h3 class="skills-title">TI & Programação</h3>
-                    <p><i class="devicon-python-plain colored"></i> Python, Java, MySQL</p>
-                    <p><i class="devicon-git-plain colored"></i> Git & GitHub</p>
-                    <p><i class="devicon-docker-plain colored"></i> Docker, AWS (em formação)</p>
+                    <h3 class="skills-title">Tecnologia</h3>
+                    <p><i class="devicon-python-plain"></i> Python</p>
+                    <p><i class="devicon-git-plain"></i> Git/GitHub</p>
+                    <p><i class="devicon-mysql-plain"></i> MySQL</p>
+                    <p>Power BI, Docker (em aprendizado)</p>
                 </div>
+
+                <!-- Infraestrutura -->
                 <div class="skills-box">
                     <h3 class="skills-title">Infraestrutura</h3>
-                    <p>Manutenção e redes (Windows/Linux)</p>
-                    <p>Gerência de sistemas e suporte N2/N3</p>
-                    <p>Power BI, Microsoft Office, Windows</p>
+                    <p><i class="devicon-windows8-original"></i> Windows</p>
+                    <p>Redes, manutenção de computadores, suporte técnico N2/N3</p>
+                    <p>Administração de sistemas, Active Directory, backup</p>
                 </div>
+
+                <!-- Engenharia -->
                 <div class="skills-box">
-                    <h3 class="skills-title">Engenharia & Gestão</h3>
+                    <h3 class="skills-title">Engenharia</h3>
+                    <p><i class="devicon-autocad-plain"></i> AutoCAD 2D</p>
                     <p>Engenharia Química, Controle de Qualidade</p>
-                    <p>Gestão Orçamentária, BPF, AutoCAD 2D</p>
-                    <p>Capacidade de Organização, Liderança</p>
+                    <p>Gestão de recursos, análise de processos</p>
                 </div>
             </div>
         </div>
